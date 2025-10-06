@@ -197,7 +197,7 @@ export default function AppSidebar({
                   />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-medium"></span>
+                  <span className="truncate font-medium">HastyPH</span>
                   <span className="truncate text-xs">
                     Billing and Collection
                   </span>
