@@ -5,7 +5,6 @@ import {
   LayoutDashboard,
   BookOpenText,
   NotepadText,
-  Command,
   FileSpreadsheet,
   Building2,
   UserCog,
@@ -22,6 +21,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import Image from "next/image"
 
 const data = {
   user: {
@@ -188,10 +188,16 @@ export default function AppSidebar({
             <SidebarMenuButton size="lg" asChild>
               <a href="#">
                 <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
-                  <Command className="size-4" />
+                  <Image
+                    alt="logo"
+                    src="/logoWithoutTitle.jpg"
+                    width={50}
+                    height={50}
+                    className="max-w-[50px] w=full h-auto"
+                  />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-medium">Czeth Solutions</span>
+                  <span className="truncate font-medium"></span>
                   <span className="truncate text-xs">
                     Billing and Collection
                   </span>

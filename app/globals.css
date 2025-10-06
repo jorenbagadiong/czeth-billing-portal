@@ -1,9 +1,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@config "../tailwind.config.ts";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-marigold: #f09e2a;
+  --color-paleOrange: #fbe2bf;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);

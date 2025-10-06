@@ -1,3 +1,7 @@
+"use client"
+
+import Image from "next/image"
+
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -17,6 +21,20 @@ export function LoginForm({
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
+        <div className="flex flex-col items-center gap-2 text-center">
+          <a href="#" className="flex flex-col items-center font-medium">
+            <div className="flex items-center justify-center rounded-md">
+              <Image
+                src="/logo.jpg"
+                alt="logo"
+                width={200}
+                height={200}
+                className="max-w-[200px] w=full h-auto"
+              />
+            </div>
+          </a>
+          <h1 className="text-xl font-bold">Welcome to HastyPH</h1>
+        </div>
         <CardHeader>
           <CardTitle>Login to your account</CardTitle>
           <CardDescription>
@@ -41,9 +59,15 @@ export function LoginForm({
                 </div>
                 <Input id="password" type="password" required />
               </div>
-              <div className="flex flex-col gap-3">
-                <Button type="submit" className="w-full">
+              <div className="flex flex-col items-center gap-2">
+                <Button type="submit" className="w-full bg-marigold">
                   Login
+                </Button>
+                <Button
+                  onClick={() => (location.href = "/dashboard")}
+                  className="w-full"
+                >
+                  Dashboard
                 </Button>
               </div>
             </div>
