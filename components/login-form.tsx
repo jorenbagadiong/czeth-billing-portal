@@ -8,6 +8,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -73,6 +74,7 @@ export function LoginForm({
             </div>
           </form>
         </CardContent>
+        <CardFooter>Powered by: Czeth</CardFooter>
       </Card>
     </div>
   )

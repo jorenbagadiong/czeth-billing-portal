@@ -25,7 +25,7 @@ import Image from "next/image"
 
 const data = {
   user: {
-    name: "shadcn",
+    name: "Czeth Admin",
     email: "m@example.com",
     avatar: "/avatars/shadcn.jpg",
   },
@@ -212,6 +212,7 @@ export default function AppSidebar({
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
+        <div>Powered by: Czeth</div>
       </SidebarFooter>
     </Sidebar>
   )
